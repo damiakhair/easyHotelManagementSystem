@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Easy Hostel - Student Management</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/easyhostel.ico" rel="icon">
+  <link href="assets/img/easyhostel_color.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.4.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="easyhostel.html" class="logo d-flex align-items-center">
+        <img src="assets/img/easyhostel_color.png" alt="">
+        <span class="d-none d-lg-block">Easy Hostel</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/syasya.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Syasya Amirah</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Syasya Amirah</h6>
+              <span>Degree in Information Technology</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashboard-admin.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>View Applicants</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="hostel-mawar.html">
+              <i class="bi bi-circle"></i><span>Hostel Mawar</span>
+            </a>
+          </li>
+          <li>
+            <a href="hostel-melur.html">
+              <i class="bi bi-circle"></i><span>Hostel Melur</span>
+            </a>
+          </li>
+          <li>
+            <a href="hostel-amin.html">
+              <i class="bi bi-circle"></i><span>Hostel Amin</span>
+            </a>
+          </li>
+          <li>
+            <a href="hostel-abdul.html">
+              <i class="bi bi-circle"></i><span>Hostel Abdul</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-house-door"></i><span>View Hostel</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          
+          <li>
+            <a href="blok-a.html">
+              <i class="bi bi-circle"></i><span>Block A - Hostel Mawar</span>
+            </a>
+          </li>
+          <li>
+            <a href="blok-b.html">
+              <i class="bi bi-circle"></i><span>Block B - Hostel Melur</span>
+            </a>
+          </li>
+          <li>
+            <a href="blok-c.html">
+              <i class="bi bi-circle"></i><span>Block C - Hostel Amin</span>
+            </a>
+          </li>
+          <li>
+            <a href="block-d.html">
+              <i class="bi bi-circle"></i><span>Block D - Hostel Abdul</span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!-- End Icons Nav -->
+    
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-table"></i><span>View Room</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          
+          <li>
+            <a href="room-girl.html">
+              <i class="bi bi-circle"></i><span>Block AB - Girls</span>
+            </a>
+          </li>
+          <li>
+            <a href="room-boys.html">
+              <i class="bi bi-circle"></i><span>Block CD - Boys</span>
+            </a>
+          </li>
+
+
+        </ul>
+      </li><!-- End Icons Nav -->
+
+   
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person-badge"></i><span>View Students Status</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          
+          
+          <li>
+            <a href="list-student.html">
+              <i class="bi bi-circle"></i><span>List Student Status</span>
+            </a>
+          </li>   
+          
+
+        </ul>
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-heading">ADMIN DATABASE</li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-person-plus"></i>
+          <span>Register New Admin</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login Admin</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="container">
+        <div class="card mt-5 mx-5">
+            <h5 class="card-header">View Students</h5>
+              <div class="card-body">
+                <table class="table table-striped">
+                    
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+        </head>
+        
+          
+
+            <table class="table table-borderless datatable">
+              <thead>
+                <tr>
+                  <th scope="col"><b>ID</b></th>
+                  <th scope="col"><b>Student ID</b></th>
+                  <th scope="col"><b>Gender</b></th>
+                  <th scope="col"><b>Disability</b></th>
+                  <th scope="col"><b>Level</b></th>
+                  <th scope="col"><b>Room Number</b></th>
+                  <th scope="col"><b>Validation</b></th>
+                  <th scope="col"><b>Button</b></th>
+                  <th scope="col"><b>Status</b></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="#">#2457</a></th>
+                  <td>2021106725</td>
+                  <td>Female</td>
+                  <td><a href="#" class="text-primary">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>A001</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option>
+                  </td>
+                  <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-success">Approved</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2147</a></th>
+                  <td>2021435136</td>
+                  <td>Female</td>
+                  <td><a href="#" class="text-primary">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>B001</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option>
+                    <button type="button">Submit</button>
+                </td>
+                <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-warning">Pending</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2049</a></th>
+                  <td>2021430392</td>
+                  <td>Male</td>
+                  <td><a href="#" class="text-primary">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>C001</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-success">Approved</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2644</a></th>
+                  <td>2022185723</td>
+                  <td>Female</td>
+                  <td><a href="#" class="text-primar">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>D001</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-danger">Rejected</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2645</a></th>
+                  <td>2022185800</td>
+                  <td>Female</td>
+                  <td><a href="#" class="text-primary">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>E001</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-success">Approved</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2646</a></th>
+                  <td>2022185900</td>
+                  <td>Female</td>
+                  <td><a href="#" class="text-primary">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>E002</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-danger">Rejected</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2450</a></th>
+                  <td>2021106700</td>
+                  <td>Male</td>
+                  <td>Wheelchair</td>
+                  <td>Level 1</td>
+                  <td>A002</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-success">Approved</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2140</a></th>
+                  <td>2021435100</td>
+                  <td>Male</td>
+                  <td>Wheelchair</td>
+                  <td>Level 1</td>
+                  <td>B002</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-warning">Pending</span></td>
+                </tr>
+            
+                <tr>
+                  <th scope="row"><a href="#">#2041</a></th>
+                  <td>2021430300</td>
+                  <td>Female</td>
+                  <td><a href="#" class="text-primary">Wheelchair</a></td>
+                  <td>Level 1</td>
+                  <td>C002</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-success">Approved</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="#">#2600</a></th>
+                  <td>2022185710</td>
+                  <td>Female</td>
+                  <td>Wheelchair</td>
+                  <td>Level 1</td>
+                  <td>D002</td>
+                  <td><label for="validation"></label>
+                    <select name="validation" id="validation">
+                    <option value="Validate">Validate</option>
+                    <option value="Invalidate">Invalidate</option></td>
+                    <td><a href="../admin/rooms.html" class="btn btn-sm btn-primary">Submit</a></td>
+                  <td><span class="badge bg-danger">Rejected</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+    </div>
+
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
